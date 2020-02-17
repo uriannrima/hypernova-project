@@ -5,8 +5,8 @@ import { createInstance } from "./helpers";
 
 export const renderVue = (
   name: string,
-  Component: VueConstructor<Vue>
-): VueConstructor<Vue> =>
+  Component: VueConstructor<Vue> | Vue
+): VueConstructor<Vue> | Vue =>
   hypernova({
     server() {
       console.error("Use hypernova-vue/server to render at the server.");

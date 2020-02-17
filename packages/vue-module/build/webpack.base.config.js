@@ -11,8 +11,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["vue-style-loader", "css-loader"],
-        exclude: /\.module\.css$/
+        use: ["vue-style-loader", "css-loader"]
       },
       {
         test: /\.vue$/,

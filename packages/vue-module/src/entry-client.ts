@@ -4,4 +4,4 @@ import { createApp } from "./app";
 
 const { app: App } = createApp();
 
-export default renderVue("VueModule", App as any);
+export default renderVue("VueModule", App);

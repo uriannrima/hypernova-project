@@ -4,7 +4,10 @@ import { Renderer, BundleRenderer } from "vue-server-renderer";
 
 import { createInstance } from "./helpers";
 
-export const renderVue = (name: string, Component: VueConstructor<Vue>) => (
+export const renderVue = (
+  name: string,
+  Component: VueConstructor<Vue> | Vue
+) => (
   renderer:
     | Renderer
     | BundleRenderer

@@ -25,7 +25,9 @@
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
-    "build:ssr": "webpack --config build/webpack.ssr.config.js",
-    "build:server": "webpack --config build/webpack.server.config.js"
-  }
+    "build": "yarn build:bundled && yarn build:hypernova",
+    "build:hypernova": "webpack --config build/webpack.config.js",
+    "build:bundled": "webpack --config build/webpack.bundled.config.js"
+  },
+  "sideEffects": false
 }
